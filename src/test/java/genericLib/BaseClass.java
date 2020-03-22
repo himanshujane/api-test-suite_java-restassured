@@ -7,8 +7,7 @@ import java.util.Properties;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-
+import org.testng.annotations.BeforeClass;
 import com.relevantcodes.extentreports.LogStatus;
 
 import dataProvider.Dp;
@@ -20,7 +19,7 @@ public class BaseClass {
 	//Declaring Global Variables
 	String BaseURL;
 
-	@BeforeSuite
+	@BeforeClass
 	public void setup() throws Exception {
 		ExcelRW excel = new ExcelRW(Dp.dataSheetPath);
 		
