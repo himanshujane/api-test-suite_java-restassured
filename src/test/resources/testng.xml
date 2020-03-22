@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Restassured" parallel="methods">
+<test name = "Sample Test">
+<classes>
+<class name = "scripts.S02_TestModelDropDownAPI" />
+<class name = "scripts.S01_TestManufacturersDropDownAPI" />
+<class name = "scripts.S03_TestBuiltYearDropDownAPI" />
+</classes>
+</test>
+</suite>
